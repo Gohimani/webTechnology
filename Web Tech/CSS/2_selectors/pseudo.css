@@ -1,0 +1,132 @@
+/* combinator selector ( direct child) */
+
+header > button{
+    background-color: beige;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+/* pseudo class selector */
+
+/* Pseudo class Selector */
+/* using hover property */
+header > button:hover{
+    background-color: chartreuse;
+    color: crimson;
+
+}
+
+
+/* Pseudo class selector */
+/* using active property */
+header > button:active{
+    background-color: fuchsia
+}
+
+
+/* pseudo class selector */
+/* using nth child property */
+header > ol >li:nth-child(4){
+    color: darkslateblue
+}
+
+
+/* Pseudo class selector */
+/* using nth child property */
+header > ol > li:nth-child(2n + 1){
+    background-color: hotpink;
+}
+
+/* tag name selector */
+main{
+    background-color: aquamarine;
+}
+
+
+/* combinator selector (direct child) */
+main > h1{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: lightcoral;
+    text-shadow: 2px -2px 1px black;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+
+/* combinator selector  */
+main > p {
+    font-size: 19px;
+    text-indent: 60px;
+}
+
+
+/* pseudo element selector */
+
+/* pseudo  element selector */
+/* using :: (first letter) */
+main > p::first-letter{
+    font-size: 30px;
+    color: lightcoral;
+}
+
+
+/* pseudo element selector */
+/* using :: (first line) */
+main > p::first-line{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* pseudo element selector  */
+/* using :: (after) */
+main > h1::after{
+    content: "****";
+    color: brown;
+}
+
+
+/* pseudo element selector  */
+/* using :: (before) */
+main > h1::before{
+    content: "#####";
+    color: brown;
+}
+
+
+/* pseudo  element selector */
+/* using :: (selection) */
+/* it is used for if we select the content it background   */
+main > p::selection{
+    background-color: cadetblue;
+}
+
+
+/* pseudo  element selector */
+/* using :: (marker) */
+main > ul > li::marker{
+    color: crimson;
+}
+
+
+/* we can combimne the pseudo element selector and pseudo class selector  */
+
+/* if we give :(single colon ) means that will be consider as a pseudo class selector */
+
+/* if we give :: (double colon) means that will be consider as a pseudo element selector */
+main > ul > li:nth-child(2n)::marker{
+    color: darkviolet;
+}
+
+
+/* we can target the element by using that attribute*/
+/* here we target the input by giving its attribute (type="text) */
+
+input[type="text"]{
+    background-color: bisque;
+}

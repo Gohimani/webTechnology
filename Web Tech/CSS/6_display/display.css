@@ -1,0 +1,80 @@
+/*      div.box#box${box-$}*4    ---->creating multiple div with same class name and diff id name  */
+
+
+/* universal selector ---->simple selector */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* class name selector ----> simple selector*/
+.container{
+    height: 500px;
+    width: 700px;
+    border: 3px solid black;
+}
+
+
+/* direct child -----> combinator selector */
+.container > .box{
+    height: 100px;
+    width: 100;
+    border: 2px solid red;
+}
+
+
+/* direct child -----> combinator selector */ 
+/*  here we can change the display of the element  */
+.container > #box1{
+    display: inline-block;
+}
+
+.container > #box2{
+    display: inline-block;
+}
+
+.container > #box3{
+    display: inline;
+}
+
+
+/* class name selector ----> simple selector */
+.butt{
+    background-color: beige;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 500px;
+    
+}
+
+
+/*  */
+.butt > button{
+    display: block;
+    width: 75%;
+    background-color: brown;
+    color: aliceblue;
+    border: 2px solid black;
+    padding: 30px 20px;
+    margin: 20px 30px;
+    border-radius: 10px;
+    letter-spacing: 3px;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*  */
+.butt > button:hover{
+    background-color: aqua;
+    color: blue;
+}

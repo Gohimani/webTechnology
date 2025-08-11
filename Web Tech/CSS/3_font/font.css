@@ -1,0 +1,44 @@
+/* universal selector */
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* tag name selector */
+header{
+    background-color: honeydew;
+    height: 250px;
+}
+
+
+/* direct child selector  (combinator selector) */
+header > p{
+    color: blue;
+
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+main > ol >li{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+section > h1{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px coral;
+   
+}
+
+section > p{
+    text-align: justify;
+    word-spacing: 5px;
+    text-indent: 20px;
+    
+}

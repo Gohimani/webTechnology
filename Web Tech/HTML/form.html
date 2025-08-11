@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+</head>
+<body>
+    <H1>Form in HTML</H1>
+    <h2>Student Form</h2>
+    <fieldset>
+        <legend>Student Information</legend>
+        <form action="" autocomplete="off" method="get">
+            <label for="sn">Student Name</label>
+            <input type="text" name="sname" id="sn"  placeholder="Enter Name" required> <br><br>
+
+            <label for="pn">Pnone Number</label>
+            <input type="tel" name="sphno" id="pn" placeholder="Enter Phone Number" maxlength="10"> <br><br>
+
+            <label for="pass">Password</label>
+            <input type="password" name="password" id="pass" placeholder="Enter Password" minlength="5"> <br><br>
+
+            <label for="sage">Age</label>
+            <input type="number" name="sage" id="sage" placeholder="Enter Age"> <br><br>
+            
+            <label for="semail">Student Email</label>
+            <input type="email" name="semail" id="semail" placeholder="Enter Email" value="admin@gmail.com" readonly> <br><br>
+
+            <label for="">Subject</label> <br><br>
+            <input type="checkbox" id="sub1" name="sub1" value="html">
+            <label for="sub1">HTML</label>
+
+            <input type="checkbox" id="sub2"name="sub2" value="css">
+            <label for="sub2">CSS</label>
+
+            <input type="checkbox" id="sub3"name="sub3" value="js">
+            <label for="sub3">Javascript</label><br><br>
+
+
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male"> <br><br>
+
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female"> <br><br>
+
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="other"> <br><br>
+            <br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob"> <br><br>
+
+            <label for="address">Address</label><br>
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your Address"></textarea> <br><br>
+
+            <label for="">Select the course</label> <br>
+            <select name="course" id="">
+                <option value="java">Java FullStack</option>
+                <option value="python">Python FullStack</option>
+                <option value="mern">MERN FullStack</option>
+            </select> <br><br>
+
+            <label for="">Expected Salary</label>
+            <input type="range" name="salary" id="" min="10000" max="100000"> <br> <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+            <input type="submit" value="This button is created by using input tag">
+            <input type="reset" value="This button is created by using input tag">
+
+
+            <button>Register</button>
+        </form>
+
+    </fieldset>
+    <p><ul><li>input tag is inline block element</li>
+    <li>Button is also inline block element</li>
+<li>form tag is used to creating form  </li>
+<li>filedset tag is used to giving border to our form</li>
+<li>legend tag is used to give a title between border of the form.. </li>
+<li>label tag is used to show the user what type of data they need to enter </li>
+<li>input tag is used to getting the data from the user...</li>
+<li>autocomplete is a attribute for the form tag... It is used turn off the suggestion when we are </li>
+<li></li></ul></p>
+
+   
+</body>
+</html>
